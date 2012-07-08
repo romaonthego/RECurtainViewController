@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30BFA95015AA042D00C05D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA94F15AA042D00C05D32 /* UIKit.framework */; };
+		30BFA95215AA042D00C05D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95115AA042D00C05D32 /* Foundation.framework */; };
+		30BFA95415AA042D00C05D32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95315AA042D00C05D32 /* CoreGraphics.framework */; };
+		30BFA95A15AA042D00C05D32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BFA95815AA042D00C05D32 /* InfoPlist.strings */; };
+		30BFA95C15AA042D00C05D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA95B15AA042D00C05D32 /* main.m */; };
+		30BFA96015AA042D00C05D32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA95F15AA042D00C05D32 /* AppDelegate.m */; };
+		30BFA97115AA04F500C05D32 /* UIViewController+RECurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */; };
+		30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97315AA05C700C05D32 /* DemoViewController.m */; };
+		30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97615AA05D400C05D32 /* CurtainViewController.m */; };
+		30BFA97915AA05E700C05D32 /* wallpaper@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30BFA94B15AA042D00C05D32 /* RECurtainViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECurtainViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BFA94F15AA042D00C05D32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30BFA95115AA042D00C05D32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30BFA95315AA042D00C05D32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30BFA95715AA042D00C05D32 /* RECurtainViewControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RECurtainViewControllerExample-Info.plist"; sourceTree = "<group>"; };
+		30BFA95915AA042D00C05D32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30BFA95B15AA042D00C05D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30BFA95D15AA042D00C05D32 /* RECurtainViewControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RECurtainViewControllerExample-Prefix.pch"; sourceTree = "<group>"; };
+		30BFA95E15AA042D00C05D32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30BFA95F15AA042D00C05D32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30BFA96F15AA04F500C05D32 /* UIViewController+RECurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RECurtainViewController.h"; sourceTree = "<group>"; };
+		30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RECurtainViewController.m"; sourceTree = "<group>"; };
+		30BFA97215AA05C700C05D32 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		30BFA97315AA05C700C05D32 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		30BFA97515AA05D400C05D32 /* CurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurtainViewController.h; sourceTree = "<group>"; };
+		30BFA97615AA05D400C05D32 /* CurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurtainViewController.m; sourceTree = "<group>"; };
+		30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper@2x.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30BFA94815AA042D00C05D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BFA95015AA042D00C05D32 /* UIKit.framework in Frameworks */,
+				30BFA95215AA042D00C05D32 /* Foundation.framework in Frameworks */,
+				30BFA95415AA042D00C05D32 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30BFA94015AA042D00C05D32 = {
+			isa = PBXGroup;
+			children = (
+				30BFA96E15AA04F500C05D32 /* Source */,
+				30BFA95515AA042D00C05D32 /* RECurtainViewControllerExample */,
+				30BFA94E15AA042D00C05D32 /* Frameworks */,
+				30BFA94C15AA042D00C05D32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30BFA94C15AA042D00C05D32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30BFA94B15AA042D00C05D32 /* RECurtainViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30BFA94E15AA042D00C05D32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30BFA94F15AA042D00C05D32 /* UIKit.framework */,
+				30BFA95115AA042D00C05D32 /* Foundation.framework */,
+				30BFA95315AA042D00C05D32 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30BFA95515AA042D00C05D32 /* RECurtainViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				30BFA95615AA042D00C05D32 /* Supporting Files */,
+				30BFA95E15AA042D00C05D32 /* AppDelegate.h */,
+				30BFA95F15AA042D00C05D32 /* AppDelegate.m */,
+				30BFA97215AA05C700C05D32 /* DemoViewController.h */,
+				30BFA97315AA05C700C05D32 /* DemoViewController.m */,
+				30BFA97515AA05D400C05D32 /* CurtainViewController.h */,
+				30BFA97615AA05D400C05D32 /* CurtainViewController.m */,
+			);
+			path = RECurtainViewControllerExample;
+			sourceTree = "<group>";
+		};
+		30BFA95615AA042D00C05D32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */,
+				30BFA95715AA042D00C05D32 /* RECurtainViewControllerExample-Info.plist */,
+				30BFA95815AA042D00C05D32 /* InfoPlist.strings */,
+				30BFA95B15AA042D00C05D32 /* main.m */,
+				30BFA95D15AA042D00C05D32 /* RECurtainViewControllerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30BFA96E15AA04F500C05D32 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				30BFA96F15AA04F500C05D32 /* UIViewController+RECurtainViewController.h */,
+				30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30BFA94A15AA042D00C05D32 /* RECurtainViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30BFA96315AA042D00C05D32 /* Build configuration list for PBXNativeTarget "RECurtainViewControllerExample" */;
+			buildPhases = (
+				30BFA94715AA042D00C05D32 /* Sources */,
+				30BFA94815AA042D00C05D32 /* Frameworks */,
+				30BFA94915AA042D00C05D32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RECurtainViewControllerExample;
+			productName = RECurtainViewControllerExample;
+			productReference = 30BFA94B15AA042D00C05D32 /* RECurtainViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30BFA94215AA042D00C05D32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Roman Efimov";
+			};
+			buildConfigurationList = 30BFA94515AA042D00C05D32 /* Build configuration list for PBXProject "RECurtainViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30BFA94015AA042D00C05D32;
+			productRefGroup = 30BFA94C15AA042D00C05D32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30BFA94A15AA042D00C05D32 /* RECurtainViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30BFA94915AA042D00C05D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BFA95A15AA042D00C05D32 /* InfoPlist.strings in Resources */,
+				30BFA97915AA05E700C05D32 /* wallpaper@2x.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30BFA94715AA042D00C05D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BFA95C15AA042D00C05D32 /* main.m in Sources */,
+				30BFA96015AA042D00C05D32 /* AppDelegate.m in Sources */,
+				30BFA97115AA04F500C05D32 /* UIViewController+RECurtainViewController.m in Sources */,
+				30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */,
+				30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30BFA95815AA042D00C05D32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30BFA95915AA042D00C05D32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30BFA96115AA042D00C05D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30BFA96215AA042D00C05D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30BFA96415AA042D00C05D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RECurtainViewControllerExample/RECurtainViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "RECurtainViewControllerExample/RECurtainViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		30BFA96515AA042D00C05D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RECurtainViewControllerExample/RECurtainViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "RECurtainViewControllerExample/RECurtainViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30BFA94515AA042D00C05D32 /* Build configuration list for PBXProject "RECurtainViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30BFA96115AA042D00C05D32 /* Debug */,
+				30BFA96215AA042D00C05D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30BFA96315AA042D00C05D32 /* Build configuration list for PBXNativeTarget "RECurtainViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30BFA96415AA042D00C05D32 /* Debug */,
+				30BFA96515AA042D00C05D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30BFA94215AA042D00C05D32 /* Project object */;
+}
