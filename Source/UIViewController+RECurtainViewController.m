@@ -88,6 +88,10 @@
     } completion:^(BOOL finished){
         AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
         appDelegate.window.rootViewController = viewControllerToReveal;
+        [leftCurtain removeFromSuperview];
+        [rightCurtain removeFromSuperview];
+        [fadedView removeFromSuperview];
+        [coverView removeFromSuperview];
     }];
 }
 
