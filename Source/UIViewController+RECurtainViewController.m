@@ -53,8 +53,7 @@
     leftCurtain.image = selfPortrait;
     leftCurtain.clipsToBounds = YES;
     
-    CGRect rightFrame = CGRectMake(self.view.frame.size.width / 2, 0, self.view.frame.size.width / 2, self.view.frame.size.height);
-    UIImageView *rightCurtain = [[UIImageView alloc] initWithFrame:rightFrame];
+    UIImageView *rightCurtain = [[UIImageView alloc] initWithFrame:CGRectNull];
     rightCurtain.image = selfPortrait;
     rightCurtain.clipsToBounds = YES;
     
