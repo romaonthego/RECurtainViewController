@@ -18,17 +18,14 @@
 - (void)dismissHorizontalPressed
 {
     DemoViewController *test = [[DemoViewController alloc] init];
-    [self curtainRevealViewController:test 
-                      transitionStyle:RECurtainTransitionHorizontal
-                      backgroundColor:[UIColor blackColor]];
+    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal];
 }
 
 - (void)dismissVerticalPressed
 {
-    DemoViewController *test = [[DemoViewController alloc] init];
-    [self curtainRevealViewController:test 
-                      transitionStyle:RECurtainTransitionVertical 
-                      backgroundColor:[UIColor blackColor]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[UITableViewController alloc] initWithStyle:UITableViewStyleGrouped]];
+    
+    [self curtainRevealViewController:nav transitionStyle:RECurtainTransitionVertical];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

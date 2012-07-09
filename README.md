@@ -18,8 +18,7 @@ Now that the framework has been linked, all you need to do is drop `UIViewContro
 ``` objective-c
 DemoViewController *test = [[DemoViewController alloc] init];
 [self curtainRevealViewController:test 
-                  transitionStyle:RECurtainTransitionHorizontal
-                  backgroundColor:[UIColor blackColor]];
+                  transitionStyle:RECurtainTransitionHorizontal];
 ```
 
 ## Contact

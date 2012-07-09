@@ -35,16 +35,21 @@
     return img;
 }
 
-- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle backgroundColor:(UIColor *)backgroundColor
+- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle
 {
     UIImage *selfPortrait = [self imageWithView:self.view];
     UIImage *controllerScreenshot = [self imageWithView:viewControllerToReveal.view];
     
     UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    coverView.backgroundColor = backgroundColor;
+    coverView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:coverView];
     
-    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(30, 30, self.view.frame.size.width - 60, self.view.frame.size.height - 60)];
+    int offset = 0;
+    if ([viewControllerToReveal isKindOfClass:[UINavigationController class]]) {
+        offset = -20;
+    }
+    
+    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(30, 30 + offset, controllerScreenshot.size.width - 60, controllerScreenshot.size.height - 60)];
     fadedView.image = controllerScreenshot;
     fadedView.alpha = 0.4;
     [coverView addSubview:fadedView];
@@ -83,7 +88,7 @@
     } completion:nil];
     
     [UIView animateWithDuration:0.3 delay:0.5 options:UIViewAnimationCurveEaseIn animations:^{
-        fadedView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        fadedView.frame = CGRectMake(0, offset, controllerScreenshot.size.width, controllerScreenshot.size.height);
         fadedView.alpha = 1;
     } completion:^(BOOL finished){
         AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;

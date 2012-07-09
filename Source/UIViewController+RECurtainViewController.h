@@ -31,6 +31,6 @@ typedef enum _RECurtainTransitionStyle {
 
 @interface UIViewController (RECurtainViewController)
 
-- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle backgroundColor:(UIColor *)backgroundColor;
+- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle;
 
 @end
