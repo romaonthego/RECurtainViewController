@@ -45,7 +45,7 @@
     [self.view addSubview:coverView];
     
     int offset = 0;
-    if ([viewControllerToReveal isKindOfClass:[UINavigationController class]]) {
+    if (controllerScreenshot.size.height == [UIScreen mainScreen].bounds.size.height) {
         offset = -20;
     }
     
