@@ -32,16 +32,16 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"wallpaper.jpg"]];
+        self.view.backgroundColor = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? [UIColor colorWithPatternImage:[UIImage imageNamed:@"wallpaper.jpg"]] : [UIColor grayColor];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake(60, 170, 200, 44);
+        button.frame = CGRectMake((self.view.frame.size.width - 200) / 2, self.view.frame.size.height / 2 - 30, 200, 44);
         [button setTitle:@"Dismiss Horizontal" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(dismissHorizontalPressed) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
         
         button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake(60, 220, 200, 44);
+        button.frame = CGRectMake((self.view.frame.size.width - 200) / 2, self.view.frame.size.height / 2 + 30, 200, 44);
         [button setTitle:@"Dismiss Vertical" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(dismissVerticalPressed) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
