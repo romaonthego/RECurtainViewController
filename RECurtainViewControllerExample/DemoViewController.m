@@ -7,6 +7,7 @@
 //
 
 #import "DemoViewController.h"
+#import "CurtainViewController.h"
 
 @interface DemoViewController ()
 
@@ -16,8 +17,8 @@
 
 - (void)buttonPressed
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hi" message:@"Test" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alertView show];
+    CurtainViewController *test = [[CurtainViewController alloc] init];
+    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,7 +28,7 @@
         self.view.backgroundColor = [UIColor greenColor];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake(60, 100, 200, 44);
+        button.frame = CGRectMake((self.view.frame.size.width - 200) / 2, self.view.frame.size.height / 2 - 20, 200, 44);
         [button setTitle:@"Test button" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
