@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308DBFA615AD0CF500FC89AE /* UIViewController+RECurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */; };
 		30BFA95015AA042D00C05D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA94F15AA042D00C05D32 /* UIKit.framework */; };
 		30BFA95215AA042D00C05D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95115AA042D00C05D32 /* Foundation.framework */; };
 		30BFA95415AA042D00C05D32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95315AA042D00C05D32 /* CoreGraphics.framework */; };
 		30BFA95A15AA042D00C05D32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30BFA95815AA042D00C05D32 /* InfoPlist.strings */; };
 		30BFA95C15AA042D00C05D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA95B15AA042D00C05D32 /* main.m */; };
 		30BFA96015AA042D00C05D32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA95F15AA042D00C05D32 /* AppDelegate.m */; };
-		30BFA97115AA04F500C05D32 /* UIViewController+RECurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */; };
 		30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97315AA05C700C05D32 /* DemoViewController.m */; };
 		30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97615AA05D400C05D32 /* CurtainViewController.m */; };
 		30BFA97915AA05E700C05D32 /* wallpaper@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		308DBFA415AD0CF500FC89AE /* UIViewController+RECurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RECurtainViewController.h"; sourceTree = "<group>"; };
+		308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RECurtainViewController.m"; sourceTree = "<group>"; };
 		30BFA94B15AA042D00C05D32 /* RECurtainViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECurtainViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BFA94F15AA042D00C05D32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30BFA95115AA042D00C05D32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -30,8 +32,6 @@
 		30BFA95D15AA042D00C05D32 /* RECurtainViewControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RECurtainViewControllerExample-Prefix.pch"; sourceTree = "<group>"; };
 		30BFA95E15AA042D00C05D32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30BFA95F15AA042D00C05D32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30BFA96F15AA04F500C05D32 /* UIViewController+RECurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RECurtainViewController.h"; sourceTree = "<group>"; };
-		30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RECurtainViewController.m"; sourceTree = "<group>"; };
 		30BFA97215AA05C700C05D32 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		30BFA97315AA05C700C05D32 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		30BFA97515AA05D400C05D32 /* CurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurtainViewController.h; sourceTree = "<group>"; };
@@ -53,10 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308DBFA315AD0CF500FC89AE /* RECurtainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				308DBFA415AD0CF500FC89AE /* UIViewController+RECurtainViewController.h */,
+				308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */,
+			);
+			path = RECurtainViewController;
+			sourceTree = "<group>";
+		};
 		30BFA94015AA042D00C05D32 = {
 			isa = PBXGroup;
 			children = (
-				30BFA96E15AA04F500C05D32 /* Source */,
+				308DBFA315AD0CF500FC89AE /* RECurtainViewController */,
 				30BFA95515AA042D00C05D32 /* RECurtainViewControllerExample */,
 				30BFA94E15AA042D00C05D32 /* Frameworks */,
 				30BFA94C15AA042D00C05D32 /* Products */,
@@ -105,15 +114,6 @@
 				30BFA95D15AA042D00C05D32 /* RECurtainViewControllerExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		30BFA96E15AA04F500C05D32 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				30BFA96F15AA04F500C05D32 /* UIViewController+RECurtainViewController.h */,
-				30BFA97015AA04F500C05D32 /* UIViewController+RECurtainViewController.m */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +181,9 @@
 			files = (
 				30BFA95C15AA042D00C05D32 /* main.m in Sources */,
 				30BFA96015AA042D00C05D32 /* AppDelegate.m in Sources */,
-				30BFA97115AA04F500C05D32 /* UIViewController+RECurtainViewController.m in Sources */,
 				30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */,
 				30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */,
+				308DBFA615AD0CF500FC89AE /* UIViewController+RECurtainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
