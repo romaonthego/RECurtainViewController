@@ -53,7 +53,7 @@
     
     float padding = [UIScreen mainScreen].bounds.size.width * 0.1;
     
-    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(padding, padding + offset, controllerScreenshot.size.width - padding * 2, controllerScreenshot.size.height - padding * 2)];
+    UIImageView *fadedView = [[UIImageView alloc] initWithFrame:CGRectMake(padding, padding + offset, controllerScreenshot.size.width - padding * 2, controllerScreenshot.size.height - padding * 2 - 20)];
     fadedView.image = controllerScreenshot;
     fadedView.alpha = 0.4;
     [coverView addSubview:fadedView];
