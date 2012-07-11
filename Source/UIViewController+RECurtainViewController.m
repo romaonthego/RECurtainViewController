@@ -37,16 +37,18 @@
 
 - (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle
 {
-    UIImage *selfPortrait = [self imageWithView:self.view];
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    
+    UIImage *selfPortrait = [self imageWithView:appDelegate.window];
     UIImage *controllerScreenshot = [self imageWithView:viewControllerToReveal.view];
     
-    UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height)];
     coverView.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:coverView];
+    [appDelegate.window addSubview:coverView];
     
-    int offset = 0;
+    int offset = 20;
     if (controllerScreenshot.size.height == [UIScreen mainScreen].bounds.size.height) {
-        offset = -20;
+        offset = 0;
     }
     
     float padding = [UIScreen mainScreen].bounds.size.width * 0.1;
@@ -66,14 +68,14 @@
     
     if (transitionStyle == RECurtainTransitionHorizontal) {
         leftCurtain.contentMode = UIViewContentModeLeft;
-        leftCurtain.frame = CGRectMake(0, 0, self.view.frame.size.width / 2, self.view.frame.size.height);
+        leftCurtain.frame = CGRectMake(0, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
         rightCurtain.contentMode = UIViewContentModeRight;
-        rightCurtain.frame = CGRectMake(self.view.frame.size.width / 2, 0, self.view.frame.size.width / 2, self.view.frame.size.height);
+        rightCurtain.frame = CGRectMake(selfPortrait.size.width / 2, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
     } else {
         leftCurtain.contentMode = UIViewContentModeTop;
-        leftCurtain.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height / 2);
+        leftCurtain.frame = CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height / 2);
         rightCurtain.contentMode = UIViewContentModeBottom;
-        rightCurtain.frame = CGRectMake(0, self.view.frame.size.height / 2, self.view.frame.size.width, self.view.frame.size.height / 2);
+        rightCurtain.frame = CGRectMake(0, selfPortrait.size.height / 2, selfPortrait.size.width, selfPortrait.size.height / 2);
     }
     
     [coverView addSubview:leftCurtain];
@@ -81,11 +83,11 @@
     
     [UIView animateWithDuration:0.7 delay:0 options:UIViewAnimationCurveEaseIn animations:^{
         if (transitionStyle == RECurtainTransitionHorizontal) {
-            leftCurtain.frame = CGRectMake(- self.view.frame.size.width / 2, 0, self.view.frame.size.width / 2, self.view.frame.size.height);
-            rightCurtain.frame = CGRectMake(self.view.frame.size.width, 0, self.view.frame.size.width / 2, self.view.frame.size.height);
+            leftCurtain.frame = CGRectMake(- selfPortrait.size.width / 2, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
+            rightCurtain.frame = CGRectMake(selfPortrait.size.width, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
         } else {
-            leftCurtain.frame = CGRectMake(0, - self.view.frame.size.height / 2, self.view.frame.size.width, self.view.frame.size.height / 2);
-            rightCurtain.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height / 2);
+            leftCurtain.frame = CGRectMake(0, - selfPortrait.size.height / 2, selfPortrait.size.width, selfPortrait.size.height / 2);
+            rightCurtain.frame = CGRectMake(0, selfPortrait.size.height, selfPortrait.size.width, selfPortrait.size.height / 2);
         }
     } completion:nil];
     
