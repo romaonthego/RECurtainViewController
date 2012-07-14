@@ -3,6 +3,12 @@
 
 ![Screenshot of RECurtainViewController](https://github.com/romaonthego/RECurtainViewController/raw/master/Screenshot.png "RECurtainViewController Screenshot")
 
+## Requirements
+* Xcode 4.3 or higher
+* Apple LLVM compiler
+* iOS 4 or higher
+* ARC
+
 ## Demo
 
 Build and run the `RECurtainViewControllerExample` project in Xcode to see `RECurtainViewController` in action.
