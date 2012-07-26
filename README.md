@@ -9,13 +9,15 @@
 * iOS 4 or higher
 * ARC
 
+If you are not using ARC in your project, add `-fobjc-arc` as a compiler flag for all the files in this project.
+
 ## Demo
 
 Build and run the `RECurtainViewControllerExample` project in Xcode to see `RECurtainViewController` in action.
 
 ## Installation
 
-`RECurtainViewController` requires the `QuartzCore` framework, so the first thing you'll need to do is include the framework into your project. 
+`RECurtainViewController` requires the `QuartzCore` framework, so the first thing you'll need to do is include the framework into your project.
 
 Now that the framework has been linked, all you need to do is drop `UIViewController+RECurtainViewController.{h,m}` into your project, and add `#include "UIViewController+RECurtainViewController.h"` to the top of classes that will use it.
 
@@ -23,7 +25,7 @@ Now that the framework has been linked, all you need to do is drop `UIViewContro
 
 ``` objective-c
 DemoViewController *test = [[DemoViewController alloc] init];
-[self curtainRevealViewController:test 
+[self curtainRevealViewController:test
                   transitionStyle:RECurtainTransitionHorizontal];
 ```
 
