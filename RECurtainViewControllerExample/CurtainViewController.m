@@ -9,6 +9,8 @@
 #import "CurtainViewController.h"
 #import "DemoViewController.h"
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 @interface CurtainViewController ()
 
 @end
@@ -32,7 +34,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? [UIColor colorWithPatternImage:[UIImage imageNamed:@"wallpaper.jpg"]] : [UIColor grayColor];
+        self.view.backgroundColor = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? [UIColor colorWithPatternImage:[UIImage imageNamed: IS_IPHONE_5 ? @"wallpaper-568h.jpg" : @"wallpaper.jpg"]] : [UIColor grayColor];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         button.frame = CGRectMake((self.view.frame.size.width - 200) / 2, self.view.frame.size.height / 2 - 30, 200, 44);

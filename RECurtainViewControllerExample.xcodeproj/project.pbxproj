@@ -17,6 +17,8 @@
 		30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97315AA05C700C05D32 /* DemoViewController.m */; };
 		30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFA97615AA05D400C05D32 /* CurtainViewController.m */; };
 		30BFA97915AA05E700C05D32 /* wallpaper@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */; };
+		30D8DFFB1633171E00FC85A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D8DFFA1633171E00FC85A8 /* Default-568h@2x.png */; };
+		30D8E00F1633181700FC85A8 /* wallpaper-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D8E00E1633181700FC85A8 /* wallpaper-568h@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		30BFA97515AA05D400C05D32 /* CurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurtainViewController.h; sourceTree = "<group>"; };
 		30BFA97615AA05D400C05D32 /* CurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurtainViewController.m; sourceTree = "<group>"; };
 		30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper@2x.jpg"; sourceTree = "<group>"; };
+		30D8DFFA1633171E00FC85A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		30D8E00E1633181700FC85A8 /* wallpaper-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper-568h@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		30BFA95615AA042D00C05D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30D8DFFA1633171E00FC85A8 /* Default-568h@2x.png */,
+				30D8E00E1633181700FC85A8 /* wallpaper-568h@2x.jpg */,
 				30BFA97815AA05E700C05D32 /* wallpaper@2x.jpg */,
 				30BFA95715AA042D00C05D32 /* RECurtainViewControllerExample-Info.plist */,
 				30BFA95815AA042D00C05D32 /* InfoPlist.strings */,
@@ -169,6 +175,8 @@
 			files = (
 				30BFA95A15AA042D00C05D32 /* InfoPlist.strings in Resources */,
 				30BFA97915AA05E700C05D32 /* wallpaper@2x.jpg in Resources */,
+				30D8DFFB1633171E00FC85A8 /* Default-568h@2x.png in Resources */,
+				30D8E00F1633181700FC85A8 /* wallpaper-568h@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
