@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		308DBFA615AD0CF500FC89AE /* UIViewController+RECurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */; };
+		3096646116B19DA800440203 /* UIViewController+RECurtainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3096646016B19DA800440203 /* UIViewController+RECurtainViewController.m */; };
 		30BFA95015AA042D00C05D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA94F15AA042D00C05D32 /* UIKit.framework */; };
 		30BFA95215AA042D00C05D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95115AA042D00C05D32 /* Foundation.framework */; };
 		30BFA95415AA042D00C05D32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BFA95315AA042D00C05D32 /* CoreGraphics.framework */; };
@@ -22,8 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		308DBFA415AD0CF500FC89AE /* UIViewController+RECurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RECurtainViewController.h"; sourceTree = "<group>"; };
-		308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RECurtainViewController.m"; sourceTree = "<group>"; };
+		3096645F16B19DA800440203 /* UIViewController+RECurtainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RECurtainViewController.h"; sourceTree = "<group>"; };
+		3096646016B19DA800440203 /* UIViewController+RECurtainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RECurtainViewController.m"; sourceTree = "<group>"; };
 		30BFA94B15AA042D00C05D32 /* RECurtainViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECurtainViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BFA94F15AA042D00C05D32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30BFA95115AA042D00C05D32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,19 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		308DBFA315AD0CF500FC89AE /* RECurtainViewController */ = {
+		3096645E16B19DA800440203 /* RECurtainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				308DBFA415AD0CF500FC89AE /* UIViewController+RECurtainViewController.h */,
-				308DBFA515AD0CF500FC89AE /* UIViewController+RECurtainViewController.m */,
+				3096645F16B19DA800440203 /* UIViewController+RECurtainViewController.h */,
+				3096646016B19DA800440203 /* UIViewController+RECurtainViewController.m */,
 			);
-			path = RECurtainViewController;
+			name = RECurtainViewController;
+			path = ../RECurtainViewController;
 			sourceTree = "<group>";
 		};
 		30BFA94015AA042D00C05D32 = {
 			isa = PBXGroup;
 			children = (
-				308DBFA315AD0CF500FC89AE /* RECurtainViewController */,
+				3096645E16B19DA800440203 /* RECurtainViewController */,
 				30BFA95515AA042D00C05D32 /* RECurtainViewControllerExample */,
 				30BFA94E15AA042D00C05D32 /* Frameworks */,
 				30BFA94C15AA042D00C05D32 /* Products */,
@@ -191,7 +192,7 @@
 				30BFA96015AA042D00C05D32 /* AppDelegate.m in Sources */,
 				30BFA97415AA05C700C05D32 /* DemoViewController.m in Sources */,
 				30BFA97715AA05D400C05D32 /* CurtainViewController.m in Sources */,
-				308DBFA615AD0CF500FC89AE /* UIViewController+RECurtainViewController.m in Sources */,
+				3096646116B19DA800440203 /* UIViewController+RECurtainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
