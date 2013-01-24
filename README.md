@@ -17,6 +17,33 @@ Build and run the `RECurtainViewControllerExample` project in Xcode to see `RECu
 
 ## Installation
 
+### CocoaPods
+
+The recommended approach for installating RECurtainViewController is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
+
+Install CocoaPods if not already available:
+
+``` bash
+$ [sudo] gem install cocoapods
+$ pod setup
+```
+
+Edit your Podfile and add RECurtainViewController:
+
+``` bash
+$ edit Podfile
+platform :ios, '5.0'
+pod 'RECurtainViewController', '~> 1.0'
+```
+
+Install into your Xcode project:
+
+``` bash
+$ pod install
+```
+
+### Simple Install
+
 `RECurtainViewController` requires the `QuartzCore` framework, so the first thing you'll need to do is include the framework into your project.
 
 Now that the framework has been linked, all you need to do is drop `UIViewController+RECurtainViewController.{h,m}` into your project, and add `#include "UIViewController+RECurtainViewController.h"` to the top of classes that will use it.
