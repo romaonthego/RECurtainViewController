@@ -7,8 +7,10 @@ Pod::Spec.new do |s|
   s.source = {:git => 'https://github.com/romaonthego/RECurtainViewController.git', :tag => '1.0'}
   s.license = {:type => "MIT", :file => "LICENSE"}
 
-  s.platform = :ios
   s.requires_arc = true
   s.source_files = 'RECurtainViewController'
   s.public_header_files = 'RECurtainViewController/*.h'
+
+  s.platform = :ios
+  s.ios.frameworks = 'QuartzCore'
 end
