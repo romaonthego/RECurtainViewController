@@ -81,7 +81,7 @@
     [coverView addSubview:leftCurtain];
     [coverView addSubview:rightCurtain];
     
-    [UIView animateWithDuration:0.7 delay:0 options:UIViewAnimationCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.7 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         if (transitionStyle == RECurtainTransitionHorizontal) {
             leftCurtain.frame = CGRectMake(- selfPortrait.size.width / 2, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
             rightCurtain.frame = CGRectMake(selfPortrait.size.width, 0, selfPortrait.size.width / 2, selfPortrait.size.height);
@@ -91,7 +91,7 @@
         }
     } completion:nil];
     
-    [UIView animateWithDuration:0.3 delay:0.5 options:UIViewAnimationCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.3 delay:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         fadedView.frame = CGRectMake(0, offset, controllerScreenshot.size.width, controllerScreenshot.size.height);
         fadedView.alpha = 1;
     } completion:^(BOOL finished){
