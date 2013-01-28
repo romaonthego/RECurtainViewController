@@ -33,7 +33,7 @@ Edit your Podfile and add RECurtainViewController:
 ``` bash
 $ edit Podfile
 platform :ios, '5.0'
-pod 'RECurtainViewController', '~> 1.0'
+pod 'RECurtainViewController', '~> 1.0.1'
 ```
 
 Install into your Xcode project:
