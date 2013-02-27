@@ -62,6 +62,7 @@ Roman Efimov
 
 - http://github.com/romaonthego
 - http://twitter.com/romaonthego
+- romefimov@gmail.com
 
 ## License
 
