@@ -20,14 +20,18 @@
 - (void)dismissHorizontalPressed
 {
     DemoViewController *test = [[DemoViewController alloc] init];
-    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal];
+    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal withCompletionHandler:^{
+        NSLog(@"Done");
+    }];
 }
 
 - (void)dismissVerticalPressed
 {
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[UITableViewController alloc] initWithStyle:UITableViewStyleGrouped]];
     
-    [self curtainRevealViewController:nav transitionStyle:RECurtainTransitionVertical];
+    [self curtainRevealViewController:nav transitionStyle:RECurtainTransitionVertical withCompletionHandler:^{
+        NSLog(@"Done");
+    }];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
