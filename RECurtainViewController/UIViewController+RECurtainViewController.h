@@ -32,5 +32,6 @@ typedef enum _RECurtainTransitionStyle {
 @interface UIViewController (RECurtainViewController)
 
 - (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle;
+- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle withCompletionHandler:(void(^)(void))callback;
 
 @end

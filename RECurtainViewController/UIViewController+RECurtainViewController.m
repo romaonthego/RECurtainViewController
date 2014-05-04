@@ -22,7 +22,6 @@
 // THE SOFTWARE.
 
 #import "UIViewController+RECurtainViewController.h"
-#import "AppDelegate.h"
 
 @implementation UIViewController (RECurtainViewController)
 
@@ -37,14 +36,18 @@
 
 - (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle
 {
-    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    [self curtainRevealViewController:viewControllerToReveal transitionStyle:transitionStyle withCompletionHandler:nil];
+}
+
+- (void)curtainRevealViewController:(UIViewController *)viewControllerToReveal transitionStyle:(RECurtainTransitionStyle)transitionStyle withCompletionHandler:(void (^)(void))callback {
+    id appDelegate = [UIApplication sharedApplication].delegate;
     
-    UIImage *selfPortrait = [self imageWithView:appDelegate.window];
+    UIImage *selfPortrait = [self imageWithView:[appDelegate window]];
     UIImage *controllerScreenshot = [self imageWithView:viewControllerToReveal.view];
     
     UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfPortrait.size.width, selfPortrait.size.height)];
     coverView.backgroundColor = [UIColor blackColor];
-    [appDelegate.window addSubview:coverView];
+    [[appDelegate window] addSubview:coverView];
     
     int offset = 20;
     if (controllerScreenshot.size.height == [UIScreen mainScreen].bounds.size.height) {
@@ -95,12 +98,16 @@
         fadedView.frame = CGRectMake(0, offset, controllerScreenshot.size.width, controllerScreenshot.size.height);
         fadedView.alpha = 1;
     } completion:^(BOOL finished){
-        AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-        appDelegate.window.rootViewController = viewControllerToReveal;
+        id appDelegate = [UIApplication sharedApplication].delegate;
+        [appDelegate window].rootViewController = viewControllerToReveal;
+        
         [leftCurtain removeFromSuperview];
         [rightCurtain removeFromSuperview];
         [fadedView removeFromSuperview];
         [coverView removeFromSuperview];
+
+        if (callback)
+            callback();
     }];
 }
 
