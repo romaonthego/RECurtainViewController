@@ -18,7 +18,10 @@
 - (void)buttonPressed
 {
     CurtainViewController *test = [[CurtainViewController alloc] init];
-    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal];
+    
+    [self curtainRevealViewController:test transitionStyle:RECurtainTransitionHorizontal withCompletionHandler:^{
+        NSLog(@"Done");
+    }];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
